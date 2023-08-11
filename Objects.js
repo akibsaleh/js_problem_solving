@@ -77,8 +77,9 @@ function multiplyNumeric(obj) {
     return obj;
 }
 
-console.log(Boolean(undefined));
+// console.log(Boolean(undefined));
 
+/*
 let username = prompt("Who is it?");
 
 if(username === "Admin"){
@@ -95,3 +96,11 @@ if(username === "Admin"){
 } else {
     alert("I dont know you");
 }
+
+*/
+
+let firstName = null;
+let lastName = undefined;
+let nickname = "Supercoder";
+
+// console.log(firstName ?? lastName ?? nickname ?? "Anonymous");
