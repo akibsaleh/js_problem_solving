@@ -41,4 +41,33 @@ const mov_db = movies.reduce((acc, mov) => {
   return acc;
 }, {});
 
-console.log(mov_db);
+// console.log(mov_db);
+
+const scores = [85, 92, 78, 95, 88];
+
+const avg = scores.reduce((acc, score, index, array) => {
+  // return acc + val / scores.length;
+  acc += score;
+  if (index == array.length - 1) {
+    return acc / array.length;
+  } else {
+    return acc;
+  }
+}, 0);
+
+const words = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+
+const large = words.reduce((acc, val) => {
+  if (acc.length < val.length) acc = val;
+  return acc;
+}, '');
+
+function fullName() {
+  const surName = 'Talukder';
+
+  function firstName() {
+    console.log('Tanvir ' + surName);
+  }
+
+  return firstName();
+}

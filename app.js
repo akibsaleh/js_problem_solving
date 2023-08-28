@@ -193,3 +193,15 @@ function fixBirdCountLog(birdsPerDay) {
 let birdsPerDay = [3, 0, 5, 1, 0, 4, 1, 0, 3, 4, 3, 0];
 
 // console.log(fixBirdCountLog(birdsPerDay));
+
+function counter() {
+  let count = 0;
+  function increase() {
+    count = count + 1;
+  }
+  return increase();
+}
+
+let counter1 = counter();
+
+console.log(counter());
