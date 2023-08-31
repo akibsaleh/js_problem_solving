@@ -1,14 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
-  <body>
-    <h1>Akib</h1>
-    <button id="start">START</button>
-    <button id="stop">STOP</button>
+  <body class="h-screen w-full flex flex-col justify-center items-center">
+    <div class="text-center p-5 space-y-10">
+      <!-- This is to view github profile from api -->
+      <!-- <h1 class="text-4xl text-white">Check out your Github Public Information</h1> -->
+      <!-- <form class="flex flex-col justify-center items-center gap-y-5">
+        <input type="text" name="username" id="username" placeholder="Enter your Github Username" class="w-72 px-8 py-3 rounded-lg input-bordered" />
+        
+      </form> -->
+      <!-- <button type="button" class="btn btn-accent text-white w-48">Show Github Info</button>
+    </div>
+    <div id="vein"></div> -->
+    <!-- This is for the background changer js  -->
+    <!-- <button type="button" id="start" class="btn bg-white text-black btn-lg">START</button>
+    <button type="button" id="stop" class="btn bg-white text-black btn-lg">STOP</button> -->
+
+    <!-- this for the keyboard checker  -->
+    <div class="container">
+      <div id="insert">
+        <div class="key">Press Key and watch magic</div>
+      </div>
+    </div>
   </body>
-  <script src="async.js"></script>
+  <script src="keyboard_check.js"></script>
 </html>
