@@ -1,7 +1,7 @@
 const paymentSuccess = true;
 const marks = 70;
 
-function enroll() {
+function enroll() { 
   console.log('Course Enrollment is in progress');
 
   const promise = new Promise((resolve, reject) => {
